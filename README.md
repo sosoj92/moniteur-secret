@@ -2,6 +2,8 @@
 
 Ton écran passe un film… mais à l'œil nu, tout le monde voit juste ton bureau. Seulement à travers **tes lunettes**, le film apparaît.
 
+Le résultat final : des lunettes **autonomes et sans fil**, avec la carte, le capteur et une petite batterie intégrés dans la monture.
+
 Inspiré par une vidéo de [Perri Karyal](https://www.instagram.com/perrikaryal/). Ce tuto est indépendant : elle n'y a pas participé, et mon montage peut différer du sien. Il est pensé pour les débutant·es : **tu n'as pas besoin de savoir coder**, tout le code est fourni.
 
 > ⚠️ **Épilepsie** : la démo (touche **M**) fait alterner tout l'écran entre deux images très différentes, **de 1 à 60 fois par seconde**. C'est exactement ce qui peut déclencher une crise. Ne la lance pas et ne la montre pas si toi ou quelqu'un autour est sensible aux lumières qui clignotent.
