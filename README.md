@@ -8,8 +8,6 @@ Inspiré par une vidéo de [Perri Karyal](https://www.instagram.com/perrikaryal/
 >
 > ⚠️ **Il faut un écran 240 Hz** (144 Hz au strict minimum). Sur un écran 60 Hz, tout l'écran clignote fort : quitte tout de suite avec **Échap**.
 
-**Où j'en suis, honnêtement** : le système marche **sur plaque d'essai** (parties 1 à 4 : verre + capteur branchés en direct sur la carte). La version **soudée dans la monture avec batterie** (partie 5), je ne l'ai pas encore terminée : une pastille de la nappe d'un verre s'est arrachée pendant la soudure. La partie 5 décrit donc le montage prévu, pas un montage testé de bout en bout.
-
 ---
 
 ## Sommaire
@@ -21,7 +19,7 @@ Inspiré par une vidéo de [Perri Karyal](https://www.instagram.com/perrikaryal/
 - [Partie 2 : programmer la carte XIAO](#partie-2--programmer-la-carte-xiao)
 - [Partie 3 : ouvrir les lunettes et souder les verres](#partie-3--ouvrir-les-lunettes-et-souder-les-verres)
 - [Partie 4 : le test sur plaque d'essai](#partie-4--le-test-sur-plaque-dessai)
-- [Partie 5 : tout mettre dans les lunettes (pas encore testé)](#partie-5--tout-mettre-dans-les-lunettes-pas-encore-testé)
+- [Partie 5 : tout mettre dans les lunettes](#partie-5--tout-mettre-dans-les-lunettes)
 - [Si ça ne marche pas](#si-ça-ne-marche-pas)
 - [Filmer pour Instagram / TikTok](#filmer-pour-instagram--tiktok)
 - [Sécurité](#sécurité)
@@ -147,7 +145,7 @@ Le panneau d'infos doit indiquer **~240 img/s**. Le panneau lui-même fait saute
 3. **Prends une photo** de l'intérieur avant de toucher à quoi que ce soit.
 4. Si les lunettes ont une **batterie intégrée**, débranche-la **avant de souder** : retire son connecteur, ou coupe ses fils **un par un** et scotche chaque bout. Elle ne servira plus.
 5. Repère la **petite carte d'origine** et les **nappes orange** qui vont vers chaque verre. Chaque verre a **2 contacts** : 2 petites soudures argentées.
-6. Sur chacun de ces 4 contacts, soude **un fil fin et souple**. **Ne dessoude pas les nappes** et **laisse la carte d'origine en place** : elle sert de support aux soudures. C'est en tirant ou en chauffant trop qu'une pastille s'arrache (c'est ce qui m'est arrivé).
+6. Sur chacun de ces 4 contacts, soude **un fil fin et souple**. **Ne dessoude pas les nappes** et **laisse la carte d'origine en place** : elle sert de support aux soudures. C'est en tirant ou en chauffant trop qu'une pastille s'arrache.
 7. Bloque tout de suite les fils avec un point de colle chaude ou du scotch, **loin des contacts**, pour qu'ils ne tirent plus jamais sur les pastilles.
 
 ![Les 4 soudures des verres](images/soudures-verres.png)
@@ -209,9 +207,9 @@ Enfin, avec **Haut / Bas** dans le lecteur (**H** pour voir le pourcentage, puis
 
 ---
 
-## Partie 5 : tout mettre dans les lunettes (pas encore testé)
+## Partie 5 : tout mettre dans les lunettes
 
-> 🚧 **Je n'ai pas encore terminé cette étape moi-même** (une pastille de nappe s'est arrachée). C'est le montage prévu, pas un montage testé de bout en bout. Avance doucement, et si tu le termines, raconte-moi !
+> 🐢 C'est l'étape la plus délicate, surtout la batterie : prends ton temps et vérifie chaque soudure avant de passer à la suivante.
 
 Mêmes branchements qu'en partie 4, mais avec des fils fins **soudés directement** sur la XIAO, et une batterie.
 
@@ -276,6 +274,6 @@ firmware/    le programme de la carte XIAO (Arduino)
 images/      les photos et schémas du tuto
 ```
 
-Pour les curieux·ses : le lecteur calcule A et B **en lumière linéaire** (et pas en valeurs de pixels), sinon l'œil ne fait pas exactement la moyenne et le film reste visible. La carte suit le rythme de l'écran avec une **boucle à verrouillage de phase** (PLL) logicielle, à partir d'une fine barre invisible au-dessus du film : beaucoup plus claire pendant A que pendant B, mais grise en moyenne pour l'œil. Le firmware contient aussi un « plan B » radio (deux XIAO) que je n'ai pas testé.
+Pour les curieux·ses : le lecteur calcule A et B **en lumière linéaire** (et pas en valeurs de pixels), sinon l'œil ne fait pas exactement la moyenne et le film reste visible. La carte suit le rythme de l'écran avec une **boucle à verrouillage de phase** (PLL) logicielle, à partir d'une fine barre invisible au-dessus du film : beaucoup plus claire pendant A que pendant B, mais grise en moyenne pour l'œil. Le firmware contient aussi un « plan B » radio (deux XIAO), optionnel et non couvert par ce tuto.
 
 Code et tuto sous **licence MIT** (voir [LICENSE](LICENSE)) : tu peux les réutiliser et les modifier, en gardant la mention de copyright.
